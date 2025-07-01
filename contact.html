@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulen | Photography HTML Template</title>
+    <link rel="stylesheet" href="contac.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu" onclick="openSidebar()">
+            
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                <path  d="M17.5 6h-15c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h15c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"></path>
+                <path  d="M17.5 11h-15c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h15c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"></path>
+                <path  d="M17.5 16h-15c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h15c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"></path>
+                </svg>
+        </div>
+        <div class="social-icons">
+            <img src="themify-icons-font/themify-icons/SVG/facebook.svg " class="facebook" alt="">
+            <img src="themify-icons-font/themify-icons/SVG/twitter-alt.svg" class="twitter" alt="">
+            <img src="themify-icons-font/themify-icons/SVG/linkedin.svg" class="linkedin" alt="">
+            <img src="themify-icons-font/themify-icons/SVG/instagram.svg" class="instagram" alt="">
+        </div>
+    </div>
+    <div class="sidebar-overlay" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                
+                <i  class="fas-fa-arrow-left "  onclick="closeSidebar()"> 
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                        <path  d="M0.646 10.146l6-6c0.195-0.195 0.512-0.195 0.707 0s0.195 0.512 0 0.707l-5.146 5.146h16.293c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-16.293l5.146 5.146c0.195 0.195 0.195 0.512 0 0.707-0.098 0.098-0.226 0.146-0.354 0.146s-0.256-0.049-0.354-0.146l-6-6c-0.195-0.195-0.195-0.512 0-0.707z"></path>
+                        </svg>
+                </i>
+                <span class="logo">TULEN</span>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="galeria1.html">Gallery</a>
+                <a href="#">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="social-icons">
+                    <img src="themify-icons-font/themify-icons/SVG/facebook.svg " class="faceabook" alt="">
+                    <img src="themify-icons-font/themify-icons/SVG/twitter-alt.svg" class="twaitter" alt="">
+                    <img src="themify-icons-font/themify-icons/SVG/linkedin.svg" class="linakedin" alt="">
+                    <img src="themify-icons-font/themify-icons/SVG/instagram.svg" class="ianstagram" alt="">
+                </div>
+                <p>
+                    Copyright ©2025 All rights reserved |
+                    This template is made with ❤️ by Colorlib
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🧠 Script de abrir/fechar menu -->
+    <script>
+        function openSidebar() {
+            document.getElementById('sidebar').classList.add('active');
+        }
+
+        function closeSidebar() {
+            document.getElementById('sidebar').classList.remove('active');
+        }
+    </script>
+
+
+  <!-- Mapa em tela cheia -->
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.715306299748!2d-73.8871096845937!3d40.74982407932796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f92178d658d%3A0x35d6ffba0a406e5d!2sJackson%20Heights%2C%20Queens%2C%20NY%2011372%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1624567890123!5m2!1spt-BR!2sbr" 
+      width="100%" 
+      height="100%" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+
+    <!-- Bloco com informações -->
+    <div class="info-box">
+      <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>60-49 Road 11378<br>New York</p>
+      </div>
+      <div class="info">
+        <i class="fas fa-envelope"></i>
+        <p>Phone: +65 11.188.888<br>Mail: colorlib@gmail.com</p>
+      </div>
+      <div class="info">
+        <i class="fas fa-clock"></i>
+        <p>Week Days: 10:00 – 22:00<br>Sunday: <strong>Close</strong></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
